@@ -1,27 +1,25 @@
-Routing
+Маршрутизация
 #######
 
 .. php:namespace:: Cake\Routing
 
 .. php:class:: Router
 
-Routing provides you tools that map URLs to controller actions. By defining
-routes, you can separate how your application is implemented from how its URL's
-are structured.
+Маршрутизация предоставляет инструменты, которые показывают URL-адреса для действий 
+контроллера. Определяя маршруты, вы можете разделить реализацию приложения и структуру 
+его URL-адреса.
 
-Routing in CakePHP also encompasses the idea of reverse routing, where an array
-of parameters can be transformed into a URL string. By using reverse routing,
-you can re-factor your application's URL structure without having to update all
-your code.
+Маршрутизация в CakePHP также включает идею обратной маршрутизации, где массив параметров 
+может быть преобразован в строку URL. С помощью обратной маршрутизации, вы можете изменить 
+структуру URL вашего приложения, без необходимости обновлять весь код.
 
 .. index:: routes.php
 
-Quick Tour
+Краткий Обзор
 ==========
 
-This section will teach you by example the most common uses of the CakePHP
-Router. Typically you want to display something as a landing page, so you add
-this to your **routes.php** file::
+Этот раздел познакомит вас с наиболее часто используемыми маршрутами в CakePHP. Обычно, если вы 
+хотите показать главную страницу, то добавьте эти строки в свой **routes.php** файл::
 
     use Cake\Routing\Router;
 
